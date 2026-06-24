@@ -1588,13 +1588,27 @@
         }
 
         .footer-legal {
-            font-size: 11px;
+            font-size: var(--text-small);
             color: var(--text-tertiary);
-            opacity: 0.6;
             max-width: 600px;
-            margin: var(--space-sm) auto 0;
-            line-height: 1.5;
-            text-align: center;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .footer-credit {
+            font-size: var(--text-small);
+            color: var(--text-tertiary);
+            margin-top: var(--space-xs);
+        }
+
+        .footer-credit a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+
+        .footer-credit a:hover {
+            color: var(--accent-light);
         }
 
         /* ═══════════════════════════════════════ PARALLAX ═══════════════════════════════════════ */
@@ -2501,6 +2515,7 @@
             </div>
             <p class="footer-text">&copy; 2024 RAILX. Все права защищены.</p>
             <p class="footer-legal">Информация, размещённая на данном сайте, не является публичной офертой. Услуги предоставляются на основании индивидуальных договоров.</p>
+            <p class="footer-credit">Дизайн и разработка сайта — <a href="https://www.nbashkirev.ru/" target="_blank" rel="noopener">Николай Башкирев</a></p>
         </div>
     </footer>
 </div>
